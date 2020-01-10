@@ -63,9 +63,9 @@ help_paste = f"""<b>USE:</b>
 
 <b>EXEMPLO:</b>
 
-<pre>/paste O @Odouspam é aluno do @MakerScriipts</pre>
+<pre>/paste O @Odouspam é aluno do @MaxCardersBot</pre>
 
-<b>Saida: {pastebin("O @Odouspam é aluno do @MakerScriipts")}</b>"""
+<b>Saida: {pastebin("O @Odouspam é aluno do @MaxCardersBot")}</b>"""
 
 comandos_pagina1 = f"""<b>🔥LISTA DE COMANDOS🔥</b>
 
