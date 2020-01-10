@@ -104,7 +104,7 @@ CIDADE:
 CEP:
 {api["cep"]}
 		
-#ChkViadex24\n"""
+#@MaxCardersBot\n"""
 					dados += "<b>"+str(count).zfill(len(str(len(cpfs))))+" -> </b>"+pastebin(dado)+"\n"
 				else:
 					dados += "<b>"+str(count).zfill(len(str(len(cpfs))))+" -> CPF não encontrado!</b>\n"
@@ -519,7 +519,7 @@ def main(msg):
 	
 	try:
 		welcome = f"""
-<b>🇧🇷 BRAZIL IRC
+<b>🇧🇷 Max Carders 
 
 {html.escape(msg['new_chat_participant']['first_name'])}, Seja bem vindo(a) a nossa comunidade onde você pode aderir e compartilhar conhecimentos um com os outros.
 
@@ -542,7 +542,7 @@ http://t.me/MaxCarders"""
 	try:
 		if(g[0] == 'new_chat_member' and msg["new_chat_participant"]["first_name"] == "FirstCatMS"):
 			keyboard = InlineKeyboardMarkup(inline_keyboard=[
-				[InlineKeyboardButton(text='✈️ TELEGRAM', callback_data='welcome_telegram', url="t.me/MrHarold")]
+				[InlineKeyboardButton(text='✈️ TELEGRAM', callback_data='welcome_telegram', url="t.me/Odouspam")]
 				])
 
 			welcome_me = f"""<b>OPA, SOU BEM VINDO AQUI?...CONFIRA MINHAS FORMAS DE CONTATO:</b>"""
@@ -574,7 +574,7 @@ http://t.me/MaxCarders"""
 	
 	
 	try:
-		if(msg["reply_to_message"]["from"]["id"] == 693860721 and not msg["text"][0] == "/" and not msg["text"][0] == "!"):
+		if(msg["reply_to_message"]["from"]["id"] == 684842099 and not msg["text"][0] == "/" and not msg["text"][0] == "!"):
 			bot.sendChatAction(msg['chat']['id'], 'typing')
 			url = "http://tabuadafree.000webhostapp.com/api_robo.php"
 			params = {"msg":msg["text"]}
@@ -983,7 +983,7 @@ http://t.me/MaxCarders"""
 		elif(msg["text"].split()[0].upper() == "!BAN" and msg["from"]["id"] in admins):
 			motivo = msg["text"][5:]
 			usuario_kickado = msg["reply_to_message"]["from"]["id"]
-			if(usuario_kickado != 693860721):
+			if(usuario_kickado != 684842099):
 				try:
 					bot.kickChatMember(msg["chat"]["id"], usuario_kickado, until_date = 1)
 				except:
@@ -1726,7 +1726,7 @@ http://t.me/MaxCarders"""
 <b>CEP:</b>
 <pre>{api["cep"]}</pre>
 								
-<b>#ChkViadex24</b>"""
+<b>#@MaxCardersBot</b>"""
 								bot.editMessageText((msg["chat"]["id"], consultando["message_id"]), f"""<b>Consulta realizada com sucesso! -{html.escape('>')}</b> {pastebin(dados)}""", parse_mode="html")
 
 							elif(msg["text"].split()[1].upper() == "-T"):
@@ -1762,7 +1762,7 @@ http://t.me/MaxCarders"""
 <b>CEP:</b>
 <pre>{api["cep"]}</pre>
 							
-<b>#ChkViadex24</b>"""
+<b>#@MaxCardersBot</b>"""
 								bot.editMessageText((msg["chat"]["id"], consultando["message_id"]), dados, parse_mode="html")
 							else:
 								bot.editMessageText((msg["chat"]["id"], consultando["message_id"]), f"""<b>Modo de envio não encontrado. Para mais detalhes, dê um</b> /cpf <b>para exibir os modos de envio e os exemplos do comando.</b>""", parse_mode="html")
