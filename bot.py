@@ -1013,7 +1013,7 @@ http://t.me/MaxCarders"""
 			bot.deleteMessage((msg["chat"]["id"], msg['message_id']))
 		elif((msg["text"].split()[0].upper() == "!KICK" and msg["from"]["id"] in admins) or (msg["text"].split()[0].upper() == "!KICKAR" and msg["from"]["id"] in admins) or (msg["text"].split()[0].upper() == "!CAPOTAR" and msg["from"]["id"] in admins) or (msg["text"].split()[0].upper() == "!CHUTAR" and msg["from"]["id"] in admins)):
 			try:
-				if(msg["reply_to_message"]["from"]["username"] != "ChkViadexBot"):
+				if(msg["reply_to_message"]["from"]["username"] != "MaxCardersBot"):
 					usuario_desbanido = msg["reply_to_message"]["from"]["id"]
 					motivo = msg["text"][len(msg["text"].split()[0]) + 1:]
 					bot.unbanChatMember(msg["chat"]["id"], usuario_desbanido)
@@ -1092,13 +1092,13 @@ http://t.me/MaxCarders"""
 				
 		
 				#STATUS DOS COMANDOS
-				elif(msg["text"].upper() == "/STATUS" or msg["text"].upper() == "/STATUS@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/STATUS" or msg["text"].upper() == "/STATUS@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], comandos_online, "html", reply_to_message_id = msg["message_id"])
 		
 		
 		
 				#VER LISTA DE COMANDOS
-				if(msg["text"].upper() == "/COMANDOS" or msg["text"].upper() == "/COMANDOS@CHKVIADEXBOT"):
+				if(msg["text"].upper() == "/COMANDOS" or msg["text"].upper() == "/COMANDOS@MaxCardersBot"):
 					keyboard = InlineKeyboardMarkup(
 						inline_keyboard=[
 							[InlineKeyboardButton(text='➡️ Próxima Página', callback_data='comandos_proximo')]
@@ -1111,33 +1111,33 @@ http://t.me/MaxCarders"""
 						msg["reply_to_message"]
 					except:
 						bot.sendMessage(msg["chat"]["id"], help_traduz, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/CCGEN" or msg["text"].upper() == "/CCGEN@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/CCGEN" or msg["text"].upper() == "/CCGEN@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_ccgen, "html", reply_to_message_id = msg["message_id"])
-#				elif(msg["text"].upper() == "/SKY" or msg["text"].upper() == "/SKY@CHKVIADEXBOT"):
+#				elif(msg["text"].upper() == "/SKY" or msg["text"].upper() == "/SKY@MaxCardersBot"):
 #					bot.sendMessage(msg["chat"]["id"], help_sky, "html", reply_to_message_id = msg["message_id"])"""
-				elif(msg["text"].upper() == "/PASTE" or msg["text"].upper() == "/PASTE@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/PASTE" or msg["text"].upper() == "/PASTE@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_paste, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/ML" or msg["text"].upper() == "/ML@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/ML" or msg["text"].upper() == "/ML@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_ml, "html", reply_to_message_id = msg["message_id"])
 				elif(msg["text"].upper() == "/RT" and not "reply_to_message" in msg):
 					bot.sendMessage(msg["chat"]["id"], help_rt, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/NICKGEN" or msg["text"].upper() == "/NICKGEN@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/NICKGEN" or msg["text"].upper() == "/NICKGEN@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_nickgen, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/YOUTUBE" or msg["text"].upper() == "/YOUTUBE@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/YOUTUBE" or msg["text"].upper() == "/YOUTUBE@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_youtube, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/HASH" or msg["text"].upper() == "/HASH@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/HASH" or msg["text"].upper() == "/HASH@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_hash, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/BINGEN" or msg["text"].upper() == "/BINGEN@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/BINGEN" or msg["text"].upper() == "/BINGEN@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_bingen, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/NOME" or msg["text"].upper() == "/NOME@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/NOME" or msg["text"].upper() == "/NOME@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_nome, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/SSH" or msg["text"].upper() == "/SSH@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/SSH" or msg["text"].upper() == "/SSH@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_ssh, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/CEP" or msg["text"].upper() == "/CEP@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/CEP" or msg["text"].upper() == "/CEP@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_cep, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/EXTRAP" or msg["text"].upper() == "/EXTRAP@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/EXTRAP" or msg["text"].upper() == "/EXTRAP@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_extrap, "html", reply_to_message_id = msg["message_id"])
-				elif(msg["text"].upper() == "/CPF" or msg["text"].upper() == "/CPF@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/CPF" or msg["text"].upper() == "/CPF@MaxCardersBot"):
 					bot.sendMessage(msg["chat"]["id"], help_cpf, "html", reply_to_message_id = msg["message_id"])#
 				elif(msg["text"].upper() == "/WIKI"):
 					bot.sendMessage(msg["chat"]["id"], help_wiki, "html", reply_to_message_id = msg["message_id"])
@@ -1186,7 +1186,7 @@ http://t.me/MaxCarders"""
 								bot.sendMessage(msg["chat"]["id"], f"<b>-> O limite é de 60 CC's para não ter flood.</b>", "html", reply_to_message_id=msg["message_id"])
 						except NameError:
 							bot.sendMessage(msg["chat"]["id"], "<b>Quantidade Inválida!</b>", "html", reply_to_message_id=msg["message_id"])
-				elif(msg["text"].upper() == "/REGRA" or msg["text"].upper() == "/REGRAS" or msg["text"].upper() == "/REGRAS@CHKVIADEXBOT"):
+				elif(msg["text"].upper() == "/REGRA" or msg["text"].upper() == "/REGRAS" or msg["text"].upper() == "/REGRAS@MaxCardersBot"):
 					regras = """<b>🔥➡️ Regras ⬅️🔥
 					
 ➡️Não saia do grupo.</b>
@@ -2343,7 +2343,7 @@ PROVEDOR:</b>
 					bot.editMessageText((msg["chat"]["id"], msg1["message_id"]), text=noticia_inteira, parse_mode="html", disable_web_page_preview = True)
 				elif(msg["text"] == "<3"):
 					try:
-						if(msg["reply_to_message"]["from"]["username"] == "ChkViadexBot"):
+						if(msg["reply_to_message"]["from"]["username"] == "MaxCardersBot"):
 							lista_zueira = ["a","h", "s","u"]
 							bot.sendMessage(msg["chat"]["id"], f"<b>Tb te amo &lt;3\nHa{choice(lista_zueira)}{choice(lista_zueira)}{choice(lista_zueira)}{choice(lista_zueira)}{choice(lista_zueira)}{choice(lista_zueira)}{choice(lista_zueira)}</b>", "html", reply_to_message_id = msg["message_id"])
 					except:
