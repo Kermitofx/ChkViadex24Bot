@@ -1,4 +1,4 @@
-pip3 install telepot
-pip3 install requests
-pip3 install pyfiglet
-pip3 install bs4
+telepot
+requests
+pyfiglet
+bs4
