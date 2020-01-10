@@ -20,13 +20,13 @@ from helps import *
 import threading
 from telepot.loop import MessageLoop
 
-id_mensagem_enviada = ""
-mensagem_enviada = ""
+id_mensagem_enviada = "684842099"
+mensagem_enviada = "ola"
 quantidade_cpf = 0
-bot = telepot.Bot("621597516:AAGrwHp3d66TIqjJvwBOj9ciCfS4tCI7tzg")
-comandos_lista = ["/sky", "/paste", "/ml", "/link", "/nickgen", "/rt", "/ping", "/emails", "/report", "/cbgen@ChkViadexBot", "/youtube", "/hash", "/nome@makerscriiptsbot", "/nome", "/ssh", "/cpf@ChkViadexBot", "/admins", "/anime", "/serie", "/regra", "/regras", "/regras@makerscriiptsbot" "/clima","/fixar","/calc","/noticia", "/cep","/traduz","/criptocoins","/mp4","/chkcpf","/tablet","/cell","/mp3","/pc","/traduz","/figlet","/comandos@MakerScriiptsBOT","/thumb","/fakedataus","/fakedatabr","/fakedataca","/comandos","/status","/start","/bin","/cpf","/nome","/chkg","/chkf","/cpfgen","/cbgen","/bingen","/chkcb","/meuip","/meumac","/ip","/speednet","/noticias","/wiki","/adfly","/cotacao","/btcreal","/realbtc","/reladolar","/dolareal","/dolarbtc","/btcdolar","/chkplaca","/fakedatabr","/fakedataus","/fakedataca"]
+bot = telepot.Bot("1040502017:AAF-5lCancLJ1g2LVin9pSFNY_oCEB5R6Sk")
+comandos_lista = ["/sky", "/paste", "/ml", "/link", "/nickgen", "/rt", "/ping", "/emails", "/report", "/cbgen@MaxCardersBot", "/youtube", "/hash", "/nome@MaxCardersBot", "/nome", "/ssh", "/cpf@MaxCardersBot", "/admins", "/anime", "/serie", "/regra", "/regras", "/regras@MaxCardersBot" "/clima","/fixar","/calc","/noticia", "/cep","/traduz","/criptocoins","/mp4","/chkcpf","/tablet","/cell","/mp3","/pc","/traduz","/figlet","/comandos@MaxCardersBot","/thumb","/fakedataus","/fakedatabr","/fakedataca","/comandos","/status","/start","/bin","/cpf","/nome","/chkg","/chkf","/cpfgen","/cbgen","/bingen","/chkcb","/meuip","/meumac","/ip","/speednet","/noticias","/wiki","/adfly","/cotacao","/btcreal","/realbtc","/reladolar","/dolareal","/dolarbtc","/btcdolar","/chkplaca","/fakedatabr","/fakedataus","/fakedataca"]
 admins = []
-super = ["MrHarold"]
+super = ["Odouspam"]
 bot_interage = ["EAI","EAE", "IAE", "SALVE", "IAEW", "OI", "OLÁ", "OLA"]
 silenciar = False
 ativar = True
@@ -63,9 +63,9 @@ help_paste = f"""<b>USE:</b>
 
 <b>EXEMPLO:</b>
 
-<pre>/paste O @MrHarold é aluno do @MakerScriipts</pre>
+<pre>/paste O @Odouspam é aluno do @MakerScriipts</pre>
 
-<b>Saida: {pastebin("O @MrHarold é aluno do @MakerScriipts")}</b>"""
+<b>Saida: {pastebin("O @Odouspam é aluno do @MakerScriipts")}</b>"""
 
 comandos_pagina1 = f"""<b>🔥LISTA DE COMANDOS🔥</b>
 
