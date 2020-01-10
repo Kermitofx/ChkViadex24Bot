@@ -532,7 +532,7 @@ Dê um</b> /regras <b>para exibir as regras do grupo ou um</b> /comandos <b>para
 http://t.me/BrazilReports
 
 <b>Comunidade:</b>
-http://t.me/BrazilIRC"""
+http://t.me/MaxCarders"""
 
 	except:
 		pass
@@ -591,10 +591,10 @@ http://t.me/BrazilIRC"""
 	try:
 		if(msg["text"].upper() == "!ATIVARBOT" and msg["from"]["id"] in admins):
 			if(ativar == True):
-				bot.sendMessage("@BrazilIRC", f"<b>@{usuario} O BOT JÁ ESTÁ ATIVADO!</b>", "html")	
+				bot.sendMessage("@MaxCarders", f"<b>@{usuario} O BOT JÁ ESTÁ ATIVADO!</b>", "html")	
 			else:
 				ativar = True
-				bot.sendMessage("@BrazilIRC", f"<b>@{usuario} ATIVOU O BOT!</b>", "html")
+				bot.sendMessage("@MaxCarders", f"<b>@{usuario} ATIVOU O BOT!</b>", "html")
 				quem = ""
 		elif(msg["text"].split()[0].upper() == "!PERGUNTA" and msg["from"]["id"] in admins):
 			pergunta = msg["text"][10:]
@@ -607,7 +607,7 @@ http://t.me/BrazilIRC"""
 					[InlineKeyboardButton(text='Não', callback_data='pergunta_nao')],
 				]
 			)
-			bot.sendMessage("@BrazilIRC", f"<b>PERGUNTA:</b>\n<pre>{pergunta}</pre>\n\n<b>SIM: 0\nNÃO: 0</b>", "html", reply_to_message_id = msg["message_id"], reply_markup=keyboard)
+			bot.sendMessage("@MaxCarders", f"<b>PERGUNTA:</b>\n<pre>{pergunta}</pre>\n\n<b>SIM: 0\nNÃO: 0</b>", "html", reply_to_message_id = msg["message_id"], reply_markup=keyboard)
 			
 		elif(msg["text"].upper() == "!APPEND" and msg["from"]["username"] == "MrHarold"):
 			usuario = msg["reply_to_message"]["from"]["username"]
@@ -625,9 +625,9 @@ http://t.me/BrazilIRC"""
 			hd = f"https://i.ytimg.com/vi/{foto}/maxresdefault.jpg"
 			hq = f"https://i.ytimg.com/vi/{foto}/hqdefault.jpg"
 			try:
-				bot.sendPhoto("@BrazilIRC", photo=hd, caption=mensagem, parse_mode="html")
+				bot.sendPhoto("@MaxCarders", photo=hd, caption=mensagem, parse_mode="html")
 			except:
-				bot.sendPhoto("@BrazilIRC", photo=hq, caption=mensagem, parse_mode="html")
+				bot.sendPhoto("@MaxCarders", photo=hq, caption=mensagem, parse_mode="html")
 		elif(msg["text"].upper() == "!ADDSESSAO" and msg["from"]["username"] in super):
 			usuario_sessao = msg["reply_to_message"]["from"]["id"]
 			sessao[usuario_sessao] = 0
@@ -648,12 +648,12 @@ http://t.me/BrazilIRC"""
 			sim_nao = ["SIM","NÃO"]
 			sim_nao_sorteada = choice(sim_nao)
 			if(sim_nao_sorteada == "SIM"):
-				bot.sendMessage("@BrazilIRC", f"<b>⚠️SORTEEI UMA RESPOSTA PRO ALVO:</b>\n<pre>{html.escape(msg['reply_to_message']['from']['first_name'])}</pre>\n\n<b>➡️ SE ESSE ALVO SERÁ KICKADO OU NÃO.\n\n❇️MINHA RESPOSTA:</b> <pre>{sim_nao_sorteada}</pre>\n\n<b>ISSO SIGNIFICA QUE:</b>\n<pre>O ALVO SERÁ KICKADO✅</pre>", "html", reply_to_message_id = msg["message_id"])
-				bot.sendMessage("@BrazilIRC", f"<b>ADEUS</b> <pre>{html.escape(msg['reply_to_message']['from']['first_name'])}</pre><b>.</b>", "html")
-				bot.sendMessage("@BrazilIRC", "<b>VÁ EM PAZ!</b>", "html")
-				bot.unbanChatMember("@BrazilIRC", msg["reply_to_message"]["from"]["id"])
+				bot.sendMessage("@MaxCarders", f"<b>⚠️SORTEEI UMA RESPOSTA PRO ALVO:</b>\n<pre>{html.escape(msg['reply_to_message']['from']['first_name'])}</pre>\n\n<b>➡️ SE ESSE ALVO SERÁ KICKADO OU NÃO.\n\n❇️MINHA RESPOSTA:</b> <pre>{sim_nao_sorteada}</pre>\n\n<b>ISSO SIGNIFICA QUE:</b>\n<pre>O ALVO SERÁ KICKADO✅</pre>", "html", reply_to_message_id = msg["message_id"])
+				bot.sendMessage("@MaxCarders", f"<b>ADEUS</b> <pre>{html.escape(msg['reply_to_message']['from']['first_name'])}</pre><b>.</b>", "html")
+				bot.sendMessage("@MaxCarders", "<b>VÁ EM PAZ!</b>", "html")
+				bot.unbanChatMember("@MaxCarders", msg["reply_to_message"]["from"]["id"])
 			else:
-				bot.sendMessage("@BrazilIRC", f"<b>⚠️SORTEEI UMA RESPOSTA PRO ALVO:</b>\n<pre>{html.escape(msg['reply_to_message']['from']['first_name'])}</pre>\n\n<b>➡️ SE ESSE ALVO SERÁ KICKADO OU NÃO.\n\n❇️MINHA RESPOSTA:</b> <pre>{sim_nao_sorteada}</pre>\n\n<b>ISSO SIGNIFICA QUE:</b>\n<pre>O ALVO NÃO SERÁ KICKADO❌</pre>", "html", reply_to_message_id = msg["message_id"])
+				bot.sendMessage("@MaxCarders", f"<b>⚠️SORTEEI UMA RESPOSTA PRO ALVO:</b>\n<pre>{html.escape(msg['reply_to_message']['from']['first_name'])}</pre>\n\n<b>➡️ SE ESSE ALVO SERÁ KICKADO OU NÃO.\n\n❇️MINHA RESPOSTA:</b> <pre>{sim_nao_sorteada}</pre>\n\n<b>ISSO SIGNIFICA QUE:</b>\n<pre>O ALVO NÃO SERÁ KICKADO❌</pre>", "html", reply_to_message_id = msg["message_id"])
 		elif(msg["text"].split()[0].upper() == "!MUTE" and msg["from"]["id"] in admins):
 			try:
 				membro_mutado = msg["reply_to_message"]["from"]["id"]
@@ -661,10 +661,10 @@ http://t.me/BrazilIRC"""
 				membro_mutado = msg["text"].split()[1]
 				if(membro_mutado[0] == "@"):
 					membro_mutado = membro_mutado[1:]
-			bot.restrictChatMember("@BrazilIRC", membro_mutado, until_date=1, can_send_messages=False, can_send_media_messages=False, can_send_or_messages=False, can_add_web_page_previews=False)
+			bot.restrictChatMember("@MaxCarders", membro_mutado, until_date=1, can_send_messages=False, can_send_media_messages=False, can_send_or_messages=False, can_add_web_page_previews=False)
 		elif(msg["text"].split()[0].upper() == "!DEMUTE" and msg["from"]["id"] in admins):
 			membro_mutado = msg["reply_to_message"]["from"]["id"]
-			bot.restrictChatMember("@BrazilIRC", membro_mutado, until_date=1, can_send_messages=True, can_send_media_messages=True, can_send_or_messages=True, can_add_web_page_previews=True)
+			bot.restrictChatMember("@MaxCarders", membro_mutado, until_date=1, can_send_messages=True, can_send_media_messages=True, can_send_or_messages=True, can_add_web_page_previews=True)
 		elif(msg["text"].split()[0].upper() == "!ATIVARBOT" and msg["text"].split()[1].upper() == "PRIVADO" and msg["from"]["id"] in admins):
 			if(ativar == True):
 				bot.sendMessage(msg["chat"]["id"], f"<b>O BOT JÁ ESTÁ ATIVADO!</b>", "html")
@@ -746,9 +746,9 @@ http://t.me/BrazilIRC"""
 				mensagem = "<b>FORMATAÇÃO NÃO ENCONTRADA.</b>"	
 				
 			if("reply_to_message" in msg):
-				bot.sendMessage("@BrazilIRC", mensagem, "html", disable_web_page_preview = True, reply_to_message_id = msg["reply_to_message"]["message_id"])
+				bot.sendMessage("@MaxCarders", mensagem, "html", disable_web_page_preview = True, reply_to_message_id = msg["reply_to_message"]["message_id"])
 			else:
-				bot.sendMessage("@BrazilIRC", mensagem, "html", disable_web_page_preview = True)
+				bot.sendMessage("@MaxCarders", mensagem, "html", disable_web_page_preview = True)
 		elif(msg["text"].split()[0].upper() == "!TITULO" and msg["from"]["id"] in admins and msg["text"].split()[1] or msg["text"].split()[0].upper() == "!TITLE" and msg["from"]["id"] in admins and msg["text"].split()[1]):
 			bot.setChatTitle(msg["chat"]["id"], msg["text"][len(msg["text"].split()[0])+1:])
 		elif(msg["text"].split()[0].upper() == "!DELPERFIL" and msg["from"]["id"] in admins):
@@ -763,7 +763,7 @@ http://t.me/BrazilIRC"""
 		elif(msg["text"].split()[0].upper() == "!PY2" and msg["text"].split()[1] and msg["from"]["username"] in super):
 			code_python = msg["text"][len(msg["text"].split()[0])+1:]
 			out_py = open("saida.py", "w")
-			out_py.write(code_python.replace("TOKEN","621597516:AAFjtiRTP1vqyCLvlq_4C4mutIv2wVOO9HE"))
+			out_py.write(code_python.replace("TOKEN","1040502017:AAF-5lCancLJ1g2LVin9pSFNY_oCEB5R6Sk"))
 			out_py.close()
 			py_resultado_out = subprocess.getstatusoutput("python2 saida.py")
 			bot.sendMessage(msg["chat"]["id"], f"<b>RESULTADO:</b>\n\n<pre>{html.escape(py_resultado_out[1])}</pre>", "html", reply_to_message_id = msg["message_id"])
@@ -1058,7 +1058,7 @@ http://t.me/BrazilIRC"""
 				if(str(deram_start).count(str(msg['from']['id'])) != 1):
 					bot.sendMessage(msg["from"]["id"], "<b>ENVIADO NOVAMENTE:\n\nOPA, BEM VINDO(A) AO MEU CHAT! AGORA EU ACEITAREI SEUS COMANDOS COM FACILIDADE!\n\nMÁS PARA ISSO VOCÊ TERÁ QUE ESTAR NO GRUPO </b><pre>MS CØMÜNÏTY 171</pre> <b>PARA MIM ACEITAR SEUS COMANDOS. OBS: ESCOLHA DO EDITOR.\n\nLINK DO GRUPO: </b>https://t.me/MSComunity171\n\n<b>NÃO ACEITAMOS SPAMMERS, CASO CONTRÁRIO SERÁ BANIDO PERMANENTEMENTE!</b>\n\n<b>REGRAS:</b>\n\n<i>1. É NECESSÁRIO TER USERNAME PARA ENTRAR NO GRUPO. CASO CONTRARIO SERÁ CHUTADO.\n\n2. NÃO É PERMITIDO GHOSTS(FANTASMAS, MEMBRO QUE ENTRA NO GRUPO MÁS NÃO DIZ NADA).\n\n3. PROIBIDO PORNOGRAFIA ou GORE.\n\n</i><b>É ISTO, SEJA UM MEMBRO ATIVO E QUE OBEDEÇA AS REGRAS PARA NÃO SER BANIDO OU CHUTADO.</b>", "html", reply_to_message_id = msg["message_id"])
 				else:
-					bot.sendMessage(msg["from"]["id"], "<b>OPA, BEM VINDO(A) AO MEU CHAT! AGORA EU ACEITAREI SEUS COMANDOS COM FACILIDADE!\n\nMÁS PARA ISSO VOCÊ TERÁ QUE ESTAR NO GRUPO </b><pre>Brazil IRC</pre> <b>PARA MIM ACEITAR SEUS COMANDOS. OBS: ESCOLHA DO EDITOR.\n\nLINK DO GRUPO: </b>https://t.me/BrazilIRC\n\n<b>NÃO ACEITAMOS SPAMMERS, CASO CONTRÁRIO SERÁ BANIDO PERMANENTEMENTE!\n\n</b><b>REGRAS:</b>\n\n<i>1. É NECESSÁRIO TER USERNAME PARA ENTRAR NO GRUPO. CASO CONTRARIO SERÁ CHUTADO.\n\n2. NÃO É PERMITIDO GHOSTS(FANTASMAS, MEMBRO QUE ENTRA NO GRUPO MÁS NÃO DIZ NADA).\n\n3. PROIBIDO PORNOGRAFIA ou GORE.\n\n</i><b>É ISTO, SEJA UM MEMBRO ATIVO E QUE OBEDEÇA AS REGRAS PARA NÃO SER BANIDO OU CHUTADO.</b>", "html", reply_to_message_id = msg["message_id"])
+					bot.sendMessage(msg["from"]["id"], "<b>OPA, BEM VINDO(A) AO MEU CHAT! AGORA EU ACEITAREI SEUS COMANDOS COM FACILIDADE!\n\nMÁS PARA ISSO VOCÊ TERÁ QUE ESTAR NO GRUPO </b><pre>Brazil IRC</pre> <b>PARA MIM ACEITAR SEUS COMANDOS. OBS: ESCOLHA DO EDITOR.\n\nLINK DO GRUPO: </b>https://t.me/MaxCarders\n\n<b>NÃO ACEITAMOS SPAMMERS, CASO CONTRÁRIO SERÁ BANIDO PERMANENTEMENTE!\n\n</b><b>REGRAS:</b>\n\n<i>1. É NECESSÁRIO TER USERNAME PARA ENTRAR NO GRUPO. CASO CONTRARIO SERÁ CHUTADO.\n\n2. NÃO É PERMITIDO GHOSTS(FANTASMAS, MEMBRO QUE ENTRA NO GRUPO MÁS NÃO DIZ NADA).\n\n3. PROIBIDO PORNOGRAFIA ou GORE.\n\n</i><b>É ISTO, SEJA UM MEMBRO ATIVO E QUE OBEDEÇA AS REGRAS PARA NÃO SER BANIDO OU CHUTADO.</b>", "html", reply_to_message_id = msg["message_id"])
 			elif(msg["text"].split()[0].upper() == "/START" and msg["from"]["id"] in sessao):
 				if(str(deram_start).count(str(msg['from']['id'])) != 1):
 					bot.sendMessage(msg["from"]["id"], "<b>ENVIADO NOVAMENTE:\n\nOPA, BEM VINDO(A) AO MEU CHAT! Sua sessão está ilimitada porque o bot ainda está em beta.</b>", "html", reply_to_message_id = msg["message_id"])
@@ -1774,8 +1774,8 @@ http://t.me/BrazilIRC"""
 				elif(msg["text"].upper() == "/LINK"):
 					link = f"""
 <b>CHAT:</b>
-  • <b>USER:</b> @BrazilIRC
-  • <b>LINK:</b> t.me/BrazilIRC
+  • <b>USER:</b> @MaxCarders
+  • <b>LINK:</b> t.me/MaxCarders
 
 <b>REPORTS:</b>
   • <b>USER:</b> @BRAZILREPORTS
@@ -2603,7 +2603,7 @@ RUA/LOGRADOURO:</b>
 				pass
 		else:
 			if(msg["text"][0] == "/" and msg["text"].upper() != "/START" and not msg["from"]["id"] in sessao):
-				bot.sendMessage(msg["chat"]["id"], "<b>Não posso aceitar comandos seus no privado, Entre no grupo @BrazilIRC e envie os comandos apenas la. Ou chame meu criador no privado e alugue uma sessão para utilizar o bot no privado por apenas R$50.00/Mês.</b>\n\n<b>Criador:</b> @MrHarold", "html", reply_to_message_id = msg["message_id"])
+				bot.sendMessage(msg["chat"]["id"], "<b>Não posso aceitar comandos seus no privado, Entre no grupo @MaxCarders e envie os comandos apenas la.\n\n<b>Criador:</b> @Odouspam ", "html", reply_to_message_id = msg["message_id"])
 			if(msg["text"][0] != "/" and not msg["from"]["id"] in sessao):
 				bot.sendMessage(msg["chat"]["id"], "<b>Infelizmente sou apenas um robô que aceita comandos e não conversas.</b>", "html", reply_to_message_id = msg["message_id"])
 			if(msg["text"].split()[0] in comandos_lista):
