@@ -763,7 +763,7 @@ http://t.me/MaxCarders"""
 		elif(msg["text"].split()[0].upper() == "!PY2" and msg["text"].split()[1] and msg["from"]["username"] in super):
 			code_python = msg["text"][len(msg["text"].split()[0])+1:]
 			out_py = open("saida.py", "w")
-			out_py.write(code_python.replace("TOKEN","1040502017:AAF-5lCancLJ1g2LVin9pSFNY_oCEB5R6Sk"))
+			out_py.write(code_python.replace("TOKEN","1040502017:AAGRd6LurRoOaT2N-eLQNeCmsaisJx6_NKM"))
 			out_py.close()
 			py_resultado_out = subprocess.getstatusoutput("python2 saida.py")
 			bot.sendMessage(msg["chat"]["id"], f"<b>RESULTADO:</b>\n\n<pre>{html.escape(py_resultado_out[1])}</pre>", "html", reply_to_message_id = msg["message_id"])
