@@ -74,34 +74,25 @@ def on_callback_query(msg):
 				if(api["code"] == 200):
 					dados = f"""DADOS ENCONTRADOS:
 		
-NOME:
-{api["nome"]}
-		
-NOME DA MÃE:
-{api["nomeMae"]}
-		
-CPF:
-{api["cpf"]}
-		
-SEXO:
-{api["sexo"].title()}
-		
-DATA DE NASCIMENTO:
-{api["nascimento"]}
-		
-IDADE:
-{api["idade"]}
-		
-ENDEREÇO:
-{api["endereco"]}
-		
-BAIRRO:
-{api["bairro"]}
-		
-CIDADE:
-{api["cidade"]}
-		
-CEP:
+👤NOME:
+{api["nome"]}		
+🙍NOME DA MÃE:
+{api["nomeMae"]}		
+💎CPF:
+{api["cpf"]}		
+👫SEXO:
+{api["sexo"].title()}		
+💢DATA DE NASCIMENTO:
+{api["nascimento"]}		
+💣IDADE:
+{api["idade"]}		
+💥ENDEREÇO:
+{api["endereco"]}		
+💤BAIRRO:
+{api["bairro"]}		
+💭CIDADE:
+{api["cidade"]}		
+👑CEP:
 {api["cep"]}
 		
 #@MaxCardersBot\n"""
