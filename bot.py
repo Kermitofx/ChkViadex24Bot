@@ -1089,7 +1089,7 @@ http://t.me/MaxCarders"""
 		
 		
 				#VER LISTA DE COMANDOS
-				if(msg["text"].upper() == "/COMANDOS" or msg["text"].upper() == "/COMANDOS@MaxCardersBot"):
+				if(msg["text"].upper() == "/COMANDOS@MaxCardersBot" or msg["text"].upper() == "/COMANDOS@MaxCardersBot"):
 					keyboard = InlineKeyboardMarkup(
 						inline_keyboard=[
 							[InlineKeyboardButton(text='➡️ Próxima Página', callback_data='comandos_proximo')]
