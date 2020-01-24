@@ -24,9 +24,9 @@ id_mensagem_enviada = ""
 mensagem_enviada = ""
 quantidade_cpf = 0
 bot = telepot.Bot("1040502017:AAGRd6LurRoOaT2N-eLQNeCmsaisJx6_NKM")
-comandos_lista = ["/sky", "/paste", "/ml", "/link", "/nickgen", "/rt", "/ping", "/emails", "/report", "/cbgen@MaxCardersBot", "/youtube", "/hash", "/nome@MaxCardersBot", "/nome", "/ssh", "/cpf@MaxCardersBot", "/admins", "/anime", "/serie", "/regra", "/regras", "/regras@MaxCardersBot" "/clima","/fixar","/calc","/noticia", "/cep","/traduz","/criptocoins","/mp4","/chkcpf","/tablet","/cell","/mp3","/pc","/traduz","/figlet","/comandos@MaxCardersBot","/thumb","/fakedataus","/fakedatabr","/fakedataca","/comandos","/status","/start","/bin","/cpf","/nome","/chkg","/chkf","/cpfgen","/cbgen","/bingen","/chkcb","/meuip","/meumac","/ip","/speednet","/noticias","/wiki","/adfly","/cotacao","/btcreal","/realbtc","/reladolar","/dolareal","/dolarbtc","/btcdolar","/chkplaca","/fakedatabr","/fakedataus","/fakedataca"]
+comandos_lista = ["/sky", "/paste", "/ml", "/link", "/nickgen", "/rt", "/ping", "/emails", "/report", "/cbgen@MaxCardersBot", "/youtube", "/hash", "/nome@MaxCardersBot", "/nome", "/ssh", "/cpf@MaxCardersBot", "/admins", "/anime", "/serie", "/regra", "/regras", "/regras@MaxCardersBot" "/clima","/fixar","/calc","/noticia", "/cep","/traduz","/criptocoins","/mp4","/chkcpf","/tablet","/cell","/mp3","/pc","/traduz","/figlet","/comandos@MaxCardersBot","/thumb","/fakedataus","/fakedatabr","/fakedataca","/comandos@MaxCardersBot","/status","/start","/bin","/cpf","/nome","/chkg","/chkf","/cpfgen","/cbgen","/bingen","/chkcb","/meuip","/meumac","/ip","/speednet","/noticias","/wiki","/adfly","/cotacao","/btcreal","/realbtc","/reladolar","/dolareal","/dolarbtc","/btcdolar","/chkplaca","/fakedatabr","/fakedataus","/fakedataca"]
 admins = []
-super = ["Oteamo"]
+super = ["TioFraviin"]
 bot_interage = ["EAI","EAE", "IAE", "SALVE", "IAEW", "OI", "OLÁ", "OLA"]
 silenciar = False
 ativar = True
@@ -200,7 +200,7 @@ comandos_online = f"""<b>COMANDOS ONLINES:</b>
 ✅  <pre>/chkg</pre>
 ✅  <pre>/bin</pre>
 ✅  <pre>/cpf</pre>
-✅  <pre>/comandos</pre>
+✅  <pre>/comandos@MaxCardersBot</pre>
 ✅️  <pre>/cpfgen</pre>
 ✅  <pre>/status</pre>
 ✅  <pre>/fakedatabr</pre>
