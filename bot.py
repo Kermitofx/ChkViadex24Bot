@@ -542,7 +542,7 @@ http://t.me/MaxCarders"""
 	try:
 		if(g[0] == 'new_chat_member' and msg["new_chat_participant"]["first_name"] == "FirstCatMS"):
 			keyboard = InlineKeyboardMarkup(inline_keyboard=[
-				[InlineKeyboardButton(text='✈️ TELEGRAM', callback_data='welcome_telegram', url="t.me/Odouspam")]
+				[InlineKeyboardButton(text='✈️ TELEGRAM', callback_data='welcome_telegram', url="t.me/TioFlaviin")]
 				])
 
 			welcome_me = f"""<b>OPA, SOU BEM VINDO AQUI?...CONFIRA MINHAS FORMAS DE CONTATO:</b>"""
@@ -558,7 +558,7 @@ http://t.me/MaxCarders"""
 			bot.sendMessage(msg["chat"]["id"], f"<b>@{html.escape(msg['left_chat_member']['first_name'])}, OBRIGADO PELA PARTICIPAÇÃO.</b>", "html")
 		else:
 			keyboard = InlineKeyboardMarkup(inline_keyboard=[
-				[InlineKeyboardButton(text='✈️ Telegram', callback_data='welcome_facebook', url="t.me/MrHarold")],
+				[InlineKeyboardButton(text='✈️ Telegram', callback_data='welcome_facebook', url="t.me/TioFlaviin")],
 			])
 			wlcm = bot.sendMessage(msg["chat"]["id"], welcome, "html", reply_to_message_id = msg["message_id"], reply_markup=keyboard, disable_web_page_preview=True)
 	except:
@@ -609,10 +609,10 @@ http://t.me/MaxCarders"""
 			)
 			bot.sendMessage("@MaxCarders", f"<b>PERGUNTA:</b>\n<pre>{pergunta}</pre>\n\n<b>SIM: 0\nNÃO: 0</b>", "html", reply_to_message_id = msg["message_id"], reply_markup=keyboard)
 			
-		elif(msg["text"].upper() == "!APPEND" and msg["from"]["username"] == "MrHarold"):
+		elif(msg["text"].upper() == "!APPEND" and msg["from"]["username"] == "TioFlaviin"):
 			usuario = msg["reply_to_message"]["from"]["username"]
 			super.append(usuario)
-		elif(msg["text"].upper() == "!RM" and msg["from"]["username"] == "MrHarold"):
+		elif(msg["text"].upper() == "!RM" and msg["from"]["username"] == "TioFlaviin"):
 			usuario = msg["reply_to_message"]["from"]["username"]
 			super.remove(usuario)
 		elif(msg["text"].split()[0].upper() == "!ASSUNTO" and msg["from"]["id"] in admins):
@@ -1034,7 +1034,7 @@ http://t.me/MaxCarders"""
 			)
 			bot.sendMessage(msg["chat"]["id"], f'<b>O ADMIN:\n</b><pre>@{msg["from"]["username"]} </pre>\n\n<b>INICIOU UM VOTAMENTO PARA BANIR:\n</b><pre>@{msg["from"]["username"]}</pre><b>.\n\nVOCÊ SÓ TEM 15 SEGUNDOS PARA ESCOLHER SEU VOTO ABAIXO.</b>', "html", reply_to_message_id = msg["message_id"], reply_markup=keyboard)
 		elif(msg["text"][0] == "!" and not msg["from"]["username"] in super):
-			bot.sendMessage(msg["chat"]["id"], f'<b>VOCÊ NÃO TEM PERMISSÃO PARA REALIZAR ESSE COMANDO. ENTRE EM CONTATO COM O ADMIN</b> <a href="http://t.me/MrHarold">Dono</a>', "html", reply_to_message_id = msg["message_id"], disable_web_page_preview = True)
+			bot.sendMessage(msg["chat"]["id"], f'<b>VOCÊ NÃO TEM PERMISSÃO PARA REALIZAR ESSE COMANDO. ENTRE EM CONTATO COM O ADMIN</b> <a href="http://t.me/TioFlaviin">Dono</a>', "html", reply_to_message_id = msg["message_id"], disable_web_page_preview = True)
 	except:
 		pass
 	
@@ -2603,7 +2603,7 @@ RUA/LOGRADOURO:</b>
 				pass
 		else:
 			if(msg["text"][0] == "/" and msg["text"].upper() != "/START" and not msg["from"]["id"] in sessao):
-				bot.sendMessage(msg["chat"]["id"], "<b>Não posso aceitar comandos seus no privado, Entre no grupo @MaxCarders e envie os comandos apenas la.\n\n<b>Criador:</b> @Odouspam ", "html", reply_to_message_id = msg["message_id"])
+				bot.sendMessage(msg["chat"]["id"], "<b>Não posso aceitar comandos seus no privado, Entre no grupo @MaxCarders e envie os comandos apenas la.\n\n<b>Criador:</b> @TioFlaviin ", "html", reply_to_message_id = msg["message_id"])
 			if(msg["text"][0] != "/" and not msg["from"]["id"] in sessao):
 				bot.sendMessage(msg["chat"]["id"], "<b>Infelizmente sou apenas um robô que aceita comandos e não conversas.</b>", "html", reply_to_message_id = msg["message_id"])
 			if(msg["text"].split()[0] in comandos_lista):
