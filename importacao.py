@@ -23,7 +23,7 @@ from telepot.loop import MessageLoop
 id_mensagem_enviada = ""
 mensagem_enviada = ""
 quantidade_cpf = 0
-bot = telepot.Bot("1040502017:AAGRd6LurRoOaT2N-eLQNeCmsaisJx6_NKM")
+bot = telepot.Bot("1190846298:AAF9VoduZMYyZtUJXrQMZ2tofpz0bdXeFlU")
 comandos_lista = ["/sky", "/paste", "/ml", "/link", "/nickgen", "/rt", "/ping", "/emails", "/report", "/cbgen@MaxCardersBot", "/youtube", "/hash", "/nome@MaxCardersBot", "/nome", "/ssh", "/cpf@MaxCardersBot", "/admins", "/anime", "/serie", "/regra", "/regras", "/regras@MaxCardersBot" "/clima","/fixar","/calc","/noticia", "/cep","/traduz","/criptocoins","/mp4","/chkcpf","/tablet","/cell","/mp3","/pc","/traduz","/figlet","/comandos@MaxCardersBot","/thumb","/fakedataus","/fakedatabr","/fakedataca","/comandos","/status","/start","/bin","/cpf","/nome","/chkg","/chkf","/cpfgen","/cbgen","/bingen","/chkcb","/meuip","/meumac","/ip","/speednet","/noticias","/wiki","/adfly","/cotacao","/btcreal","/realbtc","/reladolar","/dolareal","/dolarbtc","/btcdolar","/chkplaca","/fakedatabr","/fakedataus","/fakedataca"]
 admins = []
 super = ["TioFraviin"]
